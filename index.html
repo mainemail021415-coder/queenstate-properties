@@ -27,8 +27,18 @@
             border-bottom: 1px solid #eaeaea;
         }
 
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
         .logo-area img {
-            height: 50px; /* Inadjust ko para sakto sa logo */
+            height: 45px; 
             width: auto;
         }
 
@@ -141,9 +151,10 @@
 
     <!-- HEADER / NAVIGATION -->
     <header>
-        <div class="logo-area">
-            <img src="logo.png" alt="Queenstate Logo">
-        </div>
+        <a href="#" class="logo-area">
+            <img src="logo.png" alt="Logo">
+            <span>Queenstate Properties</span>
+        </a>
         <nav>
             <a href="#">ABOUT</a>
             <a href="#">PROPERTIES</a>
