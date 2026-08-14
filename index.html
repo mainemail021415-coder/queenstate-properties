@@ -27,16 +27,9 @@
             border-bottom: 1px solid #eaeaea;
         }
 
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
         .logo-area img {
-            height: 35px;
+            height: 50px; /* Inadjust ko para sakto sa logo */
+            width: auto;
         }
 
         nav a {
@@ -97,15 +90,13 @@
 
         .hero-image {
             flex: 1;
-            background: #f0f0f0;
-            padding: 30px;
-            border-radius: 15px;
             text-align: center;
         }
 
         .hero-image img {
             max-width: 100%;
-            border-radius: 10px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
         /* Features Section */
@@ -151,8 +142,7 @@
     <!-- HEADER / NAVIGATION -->
     <header>
         <div class="logo-area">
-            <!-- Palitan ang text o lagyan ng <img src="logo.png"> para sa logo mo -->
-            <span>▲ Queenstate Properties</span>
+            <img src="logo.png" alt="Queenstate Logo">
         </div>
         <nav>
             <a href="#">ABOUT</a>
@@ -173,8 +163,7 @@
             <a href="#" class="btn-black">VIEW PROPERTIES</a>
         </div>
         <div class="hero-image">
-            <!-- Ilagay dito ang link ng iyong collage/banner image -->
-            <p style="color: #888; font-size: 14px;">[Ilagay dito ang iyong Property Image Collage]</p>
+            <img src="banner.jpg" alt="Queenstate Property Showcase">
         </div>
     </section>
 
