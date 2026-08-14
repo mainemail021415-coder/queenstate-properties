@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queenstate Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .logo-area img {
+            height: 50px; /* Inadjust ko para sakto sa logo */
+            width: auto;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            align-items: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn-black {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 80px auto;
+            padding: 0 50px;
+        }
+
+        .feature-card {
+            background: #f9f9f9;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #eee;
+        }
+
+        .feature-card h3 {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #222;
+        }
+
+        @media (max-width: 768px) {
+            .hero, .features {
+                flex-direction: column;
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <div class="logo-area">
+            <img src="logo.png" alt="Queenstate Logo">
+        </div>
+        <nav>
+            <a href="#">ABOUT</a>
+            <a href="#">PROPERTIES</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="header-contact">
+            <span>📞 +63 955 655 5670</span>
+            <span>💬 CHAT WITH US</span>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Experience Excellence in Real Estate</h1>
+            <p>Discover Queenstate Properties</p>
+            <a href="#" class="btn-black">VIEW PROPERTIES</a>
+        </div>
+        <div class="hero-image">
+            <img src="banner.jpg" alt="Queenstate Property Showcase">
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>✓ Diverse Property Options</h3>
+        </div>
+        <div class="feature-card">
+            <h3>✓ Expertise and Guidance</h3>
+        </div>
+        <div class="feature-card">
+            <h3>✓ Client-Centric Approach</h3>
+        </div>
+    </section>
+
+</body>
+</html>
