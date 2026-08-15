@@ -372,7 +372,7 @@
                 </div>
             </div>
 
-            <!-- PROPERTY 2: AYALA GREENFIELD ESTATES (Bagong Lagay) -->
+            <!-- PROPERTY 2: AYALA GREENFIELD ESTATES -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('greenfield-slider', -1)">❮</button>
@@ -398,22 +398,31 @@
                 </div>
             </div>
 
-            <!-- PROPERTY 3 -->
+            <!-- PROPERTY 3: ETON, STA ROSA CITY (Bagong Lagay) -->
             <div class="property-card">
                 <div class="carousel-container">
-                    <div class="carousel-slide">
-                        <img src="property3.jpg" alt="Prime Suburban House">
+                    <button class="carousel-btn prev" onclick="moveSlide('eton-slider', -1)">❮</button>
+                    <div class="carousel-slide" id="eton-slider">
+                        <img src="eton1.jpg" alt="Eton Sta Rosa View 1">
+                        <img src="eton2.jpg" alt="Eton Sta Rosa View 2">
+                        <img src="eton3.jpg" alt="Eton Sta Rosa View 3">
+                        <img src="eton4.jpg" alt="Eton Sta Rosa View 4">
+                        <img src="eton5.jpg" alt="Eton Sta Rosa View 5">
                     </div>
+                    <button class="carousel-btn next" onclick="moveSlide('eton-slider', 1)">❯</button>
                 </div>
+
                 <div class="property-info">
-                    <div class="property-price">₱12,000,000</div>
-                    <div class="property-title">Prime Suburban House</div>
-                    <div class="property-location">📍 Cavite</div>
+                    <div class="property-price">₱13,500,000</div>
+                    <div class="property-title">BRAND NEW HOUSE (WEST WING)</div>
+                    <div class="property-location">📍 Eton, Sta. Rosa City</div>
                     <ul class="property-features-list">
-                        <li>🛏️ 4 Bedrooms</li>
-                        <li>🛁 4 Bathrooms</li>
-                        <li>📐 220 sq.m Floor Area</li>
-                        <li>Gated Community</li>
+                        <li><strong>Lot Area:</strong> 138 sqm | <strong>Floor Area:</strong> 160+ sqm</li>
+                        <li>3 Bedrooms (with balcony in master's), 3 Baths, Family room</li>
+                        <li>Maid's room, Laundry room, 1-Car garage, Corner lot</li>
+                        <li>Includes 3 Inverter ACs, central heater, glass shower enclosures, cabinets</li>
+                        <li>Near UE (future site), UST, Eton City Square, and Eton Exit</li>
+                        <li>Clean Title | CGT Included | Flood-free</li>
                     </ul>
                     <a href="https://wa.me/639556555670" class="btn-details">Inquire via WhatsApp</a>
                 </div>
@@ -424,10 +433,10 @@
 
     <!-- JavaScript for Multiple Image Carousels -->
     <script>
-        // Dictionary para ma-track ang slide position ng bawat property
         const slideIndexes = {
             'splendido-slider': 0,
-            'greenfield-slider': 0
+            'greenfield-slider': 0,
+            'eton-slider': 0
         };
 
         function moveSlide(sliderId, direction) {
