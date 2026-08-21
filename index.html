@@ -305,6 +305,33 @@
         <h2 class="section-title">Featured Properties For Sale & Rent</h2>
         <div class="property-grid">
             
+            <!-- AFPOVAI 5 HOUSE -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('afpovai-slider', -1)">❮</button>
+                    <div class="carousel-slide" id="afpovai-slider">
+                        <img src="image_089ee8.jpg" alt="AFPOVAI 1">
+                        <img src="image_089ef1.jpg" alt="AFPOVAI 2">
+                        <img src="image_08a19a.jpg" alt="AFPOVAI 3">
+                        <img src="image_08a1b7.jpg" alt="AFPOVAI 4">
+                        <img src="image_08a1d5.jpg" alt="AFPOVAI 5">
+                        <img src="image_08a1f8.jpg" alt="AFPOVAI 6">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('afpovai-slider', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱140,000 / month</div>
+                    <div class="property-title">AFPOVAI 5 HOUSE FOR LEASE</div>
+                    <div class="property-location">📍 Near McKinley Hills & BGC</div>
+                    <ul class="property-features-list">
+                        <li>LA: 200 sqm | FA: 342 sqm</li>
+                        <li>5 Bedrooms | 3 T&B</li>
+                        <li>2-Car Garage & Roofdeck w/ Laundry</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- TWO SERENDRA RED OAK TOWER -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -327,7 +354,6 @@
                         <li>109 sqm | 37th Floor Corner Unit</li>
                         <li>3 BR, 2 T&B + Maid's Room with T&B</li>
                         <li>Fully Furnished with Balcony & Parking</li>
-                        <li>Personal Lease Only (No OR, No Pets)</li>
                     </ul>
                     <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
                 </div>
@@ -519,6 +545,7 @@
 
     <script>
         const slideIndexes = {
+            'afpovai-slider': 0,
             'serendra-slider': 0,
             'trion-slider': 0,
             'rockwell-slider': 0,
