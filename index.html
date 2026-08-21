@@ -61,6 +61,33 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- PORTOFINO ALABANG -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('portofino', -1)">❮</button>
+                    <div class="carousel-slide" id="portofino">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/portofino1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/portofino2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/portofino3.jpg" alt="3">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('portofino', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱48,000,000 gross</div>
+                    <div class="property-title">PORTOFINO ALABANG</div>
+                    <div class="property-location">📍 Alabang</div>
+                    <ul class="property-features-list">
+                        <li>Brand New Mediterranean Style House & Lot</li>
+                        <li>LA: 360 sqm | FA: 418 sqm | 4 BR & 4 T&B</li>
+                        <li>Inc. of 5% Commission & CGT</li>
+                        <li>High ceiling, Large balcony, Beautiful atrium</li>
+                        <li>Maid's & Driver's quarters, Spacious service area</li>
+                        <li>4-Car Garage, Landscaped Garden & Provision for Pool</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- NEWPORT SOUTH WING PASAY -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -746,6 +773,7 @@
 
     <script>
         const slideIndexes = { 
+            'portofino': 0,
             'newport': 0,
             'porac_lot': 0,
             'greenfield_lot': 0,
