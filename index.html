@@ -61,7 +61,30 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
-            <!-- NEWLY ADDED: GRAND HYATT MANILA RESIDENCES -->
+            <!-- NEWLY ADDED: UPTOWN RITZ (TENANTED) -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('uptownritz_tenanted', -1)">❮</button>
+                    <div class="carousel-slide" id="uptownritz_tenanted">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/uptownritz1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/uptownritz2.jpg" alt="2">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('uptownritz_tenanted', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱105,000 / month (Negotiable)</div>
+                    <div class="property-title">UPTOWN RITZ (TENANTED)</div>
+                    <div class="property-location">📍 12th Floor, BGC, Taguig City</div>
+                    <ul class="property-features-list">
+                        <li>93.5 sqm | Corner Unit | 12th Floor</li>
+                        <li>2 Bedrooms + Maid’s Room & 3 T&B (Fully Furnished)</li>
+                        <li>No Parking | Terms: 2 Mos Dep, 1 Yr Advance</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- GRAND HYATT MANILA RESIDENCES -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('grandhyatt', -1)">❮</button>
@@ -483,7 +506,7 @@
 
     <script>
         const slideIndexes = { 
-            'grandhyatt': 0, 'redoak': 0, 'proscenium': 0, 'luxemakati': 0, 'sapphire': 0, 'callisto': 0, 'rockwellwest_new': 0, 'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
+            'uptownritz_tenanted': 0, 'grandhyatt': 0, 'redoak': 0, 'proscenium': 0, 'luxemakati': 0, 'sapphire': 0, 'callisto': 0, 'rockwellwest_new': 0, 'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
             'afpovai': 0, 'serendra': 0, 'trion': 0, 'rockwell': 0, 
             'uptown': 0, 'greenfield': 0, 'westwing': 0 
         };
