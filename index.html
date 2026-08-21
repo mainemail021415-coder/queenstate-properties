@@ -61,6 +61,33 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- FOR SALE: TWO SERENDRA 1-BEDROOM -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('twoserendra_1br', -1)">❮</button>
+                    <div class="carousel-slide" id="twoserendra_1br">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/twoserendra1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/twoserendra2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/twoserendra3.jpg" alt="3">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/twoserendra4.jpg" alt="4">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/twoserendra5.jpg" alt="5">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('twoserendra_1br', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱17,500,000</div>
+                    <div class="property-title">TWO SERENDRA (1-BEDROOM)</div>
+                    <div class="property-location">📍 BGC, Taguig City</div>
+                    <ul class="property-features-list">
+                        <li>65 sqm | 1-Bedroom Condo w/ 1 Parking Slot</li>
+                        <li>Includes CGT/VAT (Previously Tenanted)</li>
+                        <li>Clean Title</li>
+                        <li>Available for viewing</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- RUSH SALE SAN PEDRO LAGUNA -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -645,6 +672,7 @@
 
     <script>
         const slideIndexes = { 
+            'twoserendra_1br': 0,
             'sanpedro_laguna': 0,
             'aveia_broadfield': 0, 
             'drtrubulacan': 0, 
