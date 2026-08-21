@@ -14,11 +14,10 @@
         }
 
         body {
-            background-color: #fce4ec; /* Light pink background */
+            background-color: #fce4ec;
             color: #1a1a1a;
         }
 
-        /* Header / Navbar */
         header {
             display: flex;
             justify-content: space-between;
@@ -62,7 +61,6 @@
             align-items: center;
         }
 
-        /* Hero Section */
         .hero {
             display: flex;
             justify-content: space-between;
@@ -118,7 +116,6 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
-        /* Features Section */
         .features {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -142,7 +139,6 @@
             color: #222;
         }
 
-        /* Properties Section */
         .properties-section {
             max-width: 1200px;
             margin: 0 auto 80px auto;
@@ -172,7 +168,6 @@
             flex-direction: column;
         }
 
-        /* Image Carousel Styling */
         .carousel-container {
             position: relative;
             width: 100%;
@@ -216,7 +211,6 @@
             background: rgba(216, 27, 96, 0.8);
         }
 
-        /* Property Card Info */
         .property-info {
             padding: 20px;
             flex-grow: 1;
@@ -291,7 +285,6 @@
 </head>
 <body>
 
-    <!-- HEADER / NAVIGATION -->
     <header>
         <a href="#" class="logo-area">
             <img src="logo.png" alt="Logo">
@@ -308,7 +301,6 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-text">
             <h1>Experience Excellence in Real Estate</h1>
@@ -320,7 +312,6 @@
         </div>
     </section>
 
-    <!-- FEATURES SECTION -->
     <section class="features">
         <div class="feature-card">
             <h3>✓ Diverse Property Options</h3>
@@ -333,12 +324,39 @@
         </div>
     </section>
 
-    <!-- PROPERTIES FOR SALE SECTION -->
     <section class="properties-section" id="properties">
         <h2 class="section-title">Featured Properties For Sale & Rent</h2>
         <div class="property-grid">
             
-            <!-- PROPERTY 1: SPLENDIDO TAGAYTAY -->
+            <!-- UPTOWN RITZ RESIDENCES (BAGONG DAGDAG) -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('uptown-slider', -1)">❮</button>
+                    <div class="carousel-slide" id="uptown-slider">
+                        <img src="uptown1.jpg" alt="Uptown Ritz Pool View">
+                        <img src="uptown2.jpg" alt="Uptown Ritz Living Area">
+                        <img src="uptown3.jpg" alt="Uptown Ritz Building View">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('uptown-slider', 1)">❯</button>
+                </div>
+
+                <div class="property-info">
+                    <div class="property-price">₱200,000 / month</div>
+                    <div class="property-title">UPTOWN RITZ PENTHOUSE</div>
+                    <div class="property-location">📍 BGC, Taguig City</div>
+                    <ul class="property-features-list">
+                        <li><strong>Floor Area:</strong> 131.05 sqm | <strong>Floor:</strong> 45th Floor</li>
+                        <li>3 Bedrooms, 3 T&B, 1 Powder Room</li>
+                        <li>1 Maid's room, 1 Parking slot</li>
+                        <li>Semi-furnished (Includes 7 Aircons)</li>
+                        <li>Amenities: Pool, Gym, and Function Room</li>
+                        <li><strong>Terms:</strong> 2 mos dep, 1 yr adv (Long term lease)</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- SPLENDIDO TAGAYTAY -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('splendido-slider', -1)">❮</button>
@@ -346,13 +364,6 @@
                         <img src="splendido1.jpg" alt="Splendido Tagaytay">
                         <img src="splendido2.jpg" alt="Splendido Tagaytay Interior">
                         <img src="splendido3.jpg" alt="Splendido Tagaytay Dining">
-                        <img src="splendido4.jpg" alt="Splendido Tagaytay Kitchen">
-                        <img src="splendido5.jpg" alt="Splendido Tagaytay Snack Bar">
-                        <img src="splendido6.jpg" alt="Splendido Tagaytay Master Bedroom">
-                        <img src="splendido7.jpg" alt="Splendido Tagaytay Bedroom">
-                        <img src="splendido8.jpg" alt="Splendido Tagaytay Bedroom 2">
-                        <img src="splendido9.jpg" alt="Splendido Tagaytay Bathroom">
-                        <img src="splendido10.jpg" alt="Splendido Tagaytay Luxury Bedroom">
                     </div>
                     <button class="carousel-btn next" onclick="moveSlide('splendido-slider', 1)">❯</button>
                 </div>
@@ -366,123 +377,6 @@
                         <li><strong>Floor Area:</strong> 2,767 sq.m | <strong>Lot Area:</strong> 1,193 sq.m</li>
                         <li>4-Storey with basement & roof deck</li>
                         <li>8 spacious bedrooms with 19 beds</li>
-                        <li>Helipad deck (fits up to 35 cars)</li>
-                    </ul>
-                    <a href="https://wa.me/639556555670" class="btn-details">Inquire via WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- PROPERTY 2: AYALA GREENFIELD ESTATES -->
-            <div class="property-card">
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="moveSlide('greenfield-slider', -1)">❮</button>
-                    <div class="carousel-slide" id="greenfield-slider">
-                        <img src="greenfield1.jpg" alt="Ayala Greenfield Estates View 1">
-                        <img src="greenfield2.jpg" alt="Ayala Greenfield Estates View 2">
-                    </div>
-                    <button class="carousel-btn next" onclick="moveSlide('greenfield-slider', 1)">❯</button>
-                </div>
-
-                <div class="property-info">
-                    <div class="property-price">Rent: ₱100k/mo | Sale: Send Offer</div>
-                    <div class="property-title">HOUSE & LOT FOR SALE / RENT</div>
-                    <div class="property-location">📍 Ayala Greenfield Estates, Calamba Laguna</div>
-                    <ul class="property-features-list">
-                        <li><strong>Phase:</strong> 7C</li>
-                        <li><strong>Lot Area:</strong> 500 sqm</li>
-                        <li><strong>Condition:</strong> Semi-Furnished</li>
-                        <li>Preferred Lease: Php 100k/month (Negotiable)</li>
-                        <li>Selling Price: Just Send Offer</li>
-                    </ul>
-                    <a href="https://wa.me/639556555670" class="btn-details">Inquire via WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- PROPERTY 3: ETON, STA ROSA CITY -->
-            <div class="property-card">
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="moveSlide('eton-slider', -1)">❮</button>
-                    <div class="carousel-slide" id="eton-slider">
-                        <img src="eton1.jpg" alt="Eton Sta Rosa View 1">
-                        <img src="eton2.jpg" alt="Eton Sta Rosa View 2">
-                        <img src="eton3.jpg" alt="Eton Sta Rosa View 3">
-                        <img src="eton4.jpg" alt="Eton Sta Rosa View 4">
-                        <img src="eton5.jpg" alt="Eton Sta Rosa View 5">
-                    </div>
-                    <button class="carousel-btn next" onclick="moveSlide('eton-slider', 1)">❯</button>
-                </div>
-
-                <div class="property-info">
-                    <div class="property-price">₱13,500,000</div>
-                    <div class="property-title">BRAND NEW HOUSE (WEST WING)</div>
-                    <div class="property-location">📍 Eton, Sta. Rosa City</div>
-                    <ul class="property-features-list">
-                        <li><strong>Lot Area:</strong> 138 sqm | <strong>Floor Area:</strong> 160+ sqm</li>
-                        <li>3 Bedrooms (with balcony in master's), 3 Baths, Family room</li>
-                        <li>Maid's room, Laundry room, 1-Car garage, Corner lot</li>
-                        <li>Includes 3 Inverter ACs, central heater, glass shower enclosures, cabinets</li>
-                        <li>Near UE (future site), UST, Eton City Square, and Eton Exit</li>
-                        <li>Clean Title | CGT Included | Flood-free</li>
-                    </ul>
-                    <a href="https://wa.me/639556555670" class="btn-details">Inquire via WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- PROPERTY 4: SOLEN RESIDENCES -->
-            <div class="property-card">
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="moveSlide('solen-slider', -1)">❮</button>
-                    <div class="carousel-slide" id="solen-slider">
-                        <img src="solen1.jpg" alt="Solen Residences Facade">
-                        <img src="solen2.jpg" alt="Solen Residences Living Area">
-                        <img src="solen3.jpg" alt="Solen Residences Kitchen">
-                        <img src="solen4.jpg" alt="Solen Residences Interior">
-                        <img src="solen5.jpg" alt="Solen Residences Living Angle">
-                        <img src="solen6.jpg" alt="Solen Residences Bedroom">
-                        <img src="solen7.jpg" alt="Solen Residences Bedroom 2">
-                        <img src="solen8.jpg" alt="Solen Residences Bathroom">
-                        <img src="solen9.jpg" alt="Solen Residences Master Bathroom">
-                        <img src="solen10.jpg" alt="Solen Residences Exterior Walkway">
-                    </div>
-                    <button class="carousel-btn next" onclick="moveSlide('solen-slider', 1)">❯</button>
-                </div>
-
-                <div class="property-info">
-                    <div class="property-price">₱23,300,000</div>
-                    <div class="property-title">SOLEN RESIDENCES (RFO)</div>
-                    <div class="property-location">📍 Greenfield City, Sta. Rosa Laguna</div>
-                    <ul class="property-features-list">
-                        <li><strong>Ready For Occupancy (2026)</strong></li>
-                        <li>4 spacious bedrooms with own T&B, Ground floor powder room</li>
-                        <li>2-Car garage, Maid’s room with own T&B</li>
-                        <li>Walk-thru closet in Master's BR & Walk-in Pantry</li>
-                        <li>Smart Home, WiFi CCTV, Split-type ACs included</li>
-                        <li>Häfele door handles, Hafele accessories, provisions for generator/solar</li>
-                    </ul>
-                    <a href="https://wa.me/639556555670" class="btn-details">Inquire via WhatsApp</a>
-                </div>
-            </div>
-
-            <!-- PROPERTY 5: SOUTH FORBES MANSION (Bagong Dagdag) -->
-            <div class="property-card">
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="moveSlide('southforbes-slider', -1)">❮</button>
-                    <div class="carousel-slide" id="southforbes-slider">
-                        <img src="southforbes1.jpg" alt="South Forbes Mansion Facade">
-                    </div>
-                    <button class="carousel-btn next" onclick="moveSlide('southforbes-slider', 1)">❯</button>
-                </div>
-
-                <div class="property-info">
-                    <div class="property-price">₱60,000,000 gross</div>
-                    <div class="property-title">LUXURY MANSION FOR SALE</div>
-                    <div class="property-location">📍 South Forbes, Silang, Cavite (Beside Westgrove)</div>
-                    <ul class="property-features-list">
-                        <li><strong>Lot Area:</strong> 460 sqm | <strong>Floor Area:</strong> 700 sqm</li>
-                        <li>6 Bedrooms & 5 T&B</li>
-                        <li>Maid's room with attached bedroom</li>
-                        <li>2-Car garage</li>
-                        <li>Clean Title & Updated Taxes</li>
                     </ul>
                     <a href="https://wa.me/639556555670" class="btn-details">Inquire via WhatsApp</a>
                 </div>
@@ -491,14 +385,10 @@
         </div>
     </section>
 
-    <!-- JavaScript for Multiple Image Carousels -->
     <script>
         const slideIndexes = {
-            'splendido-slider': 0,
-            'greenfield-slider': 0,
-            'eton-slider': 0,
-            'solen-slider': 0,
-            'southforbes-slider': 0
+            'uptown-slider': 0,
+            'splendido-slider': 0
         };
 
         function moveSlide(sliderId, direction) {
