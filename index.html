@@ -61,7 +61,33 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
-            <!-- NEWLY ADDED: ONE ROCKWELL WEST (1BR) -->
+            <!-- NEWLY ADDED: CALLISTO TOWER -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('callisto', -1)">❮</button>
+                    <div class="carousel-slide" id="callisto">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/callisto1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/callisto2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/callisto3.jpg" alt="3">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/callisto4.jpg" alt="4">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('callisto', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱35K - ₱45K / month</div>
+                    <div class="property-title">CALLISTO TOWER</div>
+                    <div class="property-location">📍 Makati City</div>
+                    <ul class="property-features-list">
+                        <li>65 sqm | 1 BR | 1 T&B (No Parking)</li>
+                        <li>₱45K Fully Furnished | ₱40K Semi | ₱35K Bare</li>
+                        <li>Pet Friendly!</li>
+                        <li>Terms: 2 Mos Adv, 2 Mos Dep (1 Yr Contract)</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- ONE ROCKWELL WEST (NEW) -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('rockwellwest_new', -1)">❮</button>
@@ -338,7 +364,7 @@
 
     <script>
         const slideIndexes = { 
-            'rockwellwest_new': 0, 'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
+            'callisto': 0, 'rockwellwest_new': 0, 'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
             'afpovai': 0, 'serendra': 0, 'trion': 0, 'rockwell': 0, 
             'uptown': 0, 'greenfield': 0, 'westwing': 0 
         };
