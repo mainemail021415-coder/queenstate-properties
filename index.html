@@ -8,7 +8,8 @@
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; scroll-behavior: smooth; }
         body { background-color: #fce4ec; color: #1a1a1a; }
         header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #ffffff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 100; }
-        .logo-area { font-weight: bold; font-size: 24px; text-decoration: none; color: #1a1a1a; }
+        .logo-area { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1a1a1a; font-weight: bold; font-size: 24px; }
+        .logo-area img { width: 35px; height: 35px; object-fit: cover; border-radius: 50%; }
         nav a { margin: 0 20px; text-decoration: none; color: #1a1a1a; font-weight: 600; font-size: 14px; }
         .header-contact { font-size: 14px; font-weight: 600; }
         
@@ -38,7 +39,10 @@
 <body>
 
     <header>
-        <a href="#" class="logo-area">Queenstate Properties</a>
+        <a href="#" class="logo-area">
+            <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/Gemini_Generated_Image_1cyou1cyou1cyoij.jpg" alt="Logo">
+            Queenstate Properties
+        </a>
         <nav>
             <a href="#properties">PROPERTIES</a>
             <a href="#">CONTACT</a>
