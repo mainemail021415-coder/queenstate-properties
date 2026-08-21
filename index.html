@@ -61,6 +61,34 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- NEWPORT SOUTH WING PASAY -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('newport', -1)">❮</button>
+                    <div class="carousel-slide" id="newport">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/newport1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/newport2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/newport3.jpg" alt="3">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/newport4.jpg" alt="4">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/newport5.jpg" alt="5">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('newport', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱3M (5 Yrs) | ₱5M (10 Yrs)</div>
+                    <div class="property-title">150 SOUTH WING NEWPORT</div>
+                    <div class="property-location">📍 SW 4th Floor, Newport, Pasay City</div>
+                    <ul class="property-features-list">
+                        <li>1 BR King Bed (Good for 3-4 persons) | Pet Friendly</li>
+                        <li>Water & HOA Dues (All-In) + Free Wifi</li>
+                        <li>Aircon (Bedroom & Living) + 2 Flat-Screen TVs</li>
+                        <li>Reclining Sofas (3-Seater & 2-Seater) & Dining Set</li>
+                        <li>Complete Appliances (Fridge, Washer, Microwave, Burner, Rice Cooker, Kettle, Dispenser)</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- PORAC PAMPANGA COMMERCIAL LOT -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -718,6 +746,7 @@
 
     <script>
         const slideIndexes = { 
+            'newport': 0,
             'porac_lot': 0,
             'greenfield_lot': 0,
             'twoserendra_1br': 0,
