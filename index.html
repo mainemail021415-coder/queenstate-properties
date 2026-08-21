@@ -61,6 +61,30 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- PORAC PAMPANGA COMMERCIAL LOT -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('porac_lot', -1)">❮</button>
+                    <div class="carousel-slide" id="porac_lot">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/porac_lot1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/porac_lot2.jpg" alt="2">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('porac_lot', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">For Sale (Commercial Lot)</div>
+                    <div class="property-title">COMMERCIAL LOT IN PORAC</div>
+                    <div class="property-location">📍 Porac, Pampanga</div>
+                    <ul class="property-features-list">
+                        <li>2.2 Hectares (22,242 sqm) | Clean Title</li>
+                        <li>143 Meters Frontage</li>
+                        <li>With 8 small houses inside the property</li>
+                        <li>Ideal for high-rise, malls, commercial & trucking business</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- AYALA GREENFIELD ESTATES LOT ONLY -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -694,6 +718,7 @@
 
     <script>
         const slideIndexes = { 
+            'porac_lot': 0,
             'greenfield_lot': 0,
             'twoserendra_1br': 0,
             'sanpedro_laguna': 0,
