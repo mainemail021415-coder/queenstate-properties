@@ -9,11 +9,10 @@
         body { background-color: #fce4ec; color: #1a1a1a; }
         header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #ffffff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 100; }
         .logo-area { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1a1a1a; font-weight: bold; font-size: 24px; }
-        .logo-area img { width: 35px; height: 35px; object-fit: cover; border-radius: 50%; }
+        .logo-area img { width: 40px; height: 40px; object-fit: contain; }
         nav a { margin: 0 20px; text-decoration: none; color: #1a1a1a; font-weight: 600; font-size: 14px; }
         .header-contact { font-size: 14px; font-weight: 600; }
         
-        /* Banner Styles */
         .banner-container { width: 100%; max-height: 400px; overflow: hidden; background: #000; }
         .banner-container img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -40,7 +39,7 @@
 
     <header>
         <a href="#" class="logo-area">
-            <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/Gemini_Generated_Image_1cyou1cyou1cyoij.jpg" alt="Logo">
+            <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/logo.png" alt="Queenstate Logo">
             Queenstate Properties
         </a>
         <nav>
@@ -50,7 +49,6 @@
         <div class="header-contact">📞 +63 955 655 5670</div>
     </header>
 
-    <!-- BANNER SA PINAKA ITAAS -->
     <div class="banner-container">
         <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/banner.jpg" alt="Queenstate Properties Banner">
     </div>
@@ -312,17 +310,9 @@
 
     <script>
         const slideIndexes = { 
-            'splendido': 0, 
-            'arborlanes': 0, 
-            'alabang': 0, 
-            'isabelle': 0, 
-            'afpovai': 0, 
-            'serendra': 0, 
-            'trion': 0, 
-            'rockwell': 0, 
-            'uptown': 0, 
-            'greenfield': 0, 
-            'westwing': 0 
+            'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
+            'afpovai': 0, 'serendra': 0, 'trion': 0, 'rockwell': 0, 
+            'uptown': 0, 'greenfield': 0, 'westwing': 0 
         };
 
         function moveSlide(id, dir) {
