@@ -305,7 +305,32 @@
         <h2 class="section-title">Featured Properties For Sale & Rent</h2>
         <div class="property-grid">
             
-            <!-- NEW: ONE ROCKWELL WEST -->
+            <!-- NEW: TRION TOWER 3 -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('trion-slider', -1)">❮</button>
+                    <div class="carousel-slide" id="trion-slider">
+                        <img src="image_0739b3.jpg" alt="Trion 1">
+                        <img src="image_0739d1.jpg" alt="Trion 2">
+                        <img src="image_0739f2.jpg" alt="Trion 3">
+                        <img src="image_073a13.png" alt="Trion 4">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('trion-slider', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱50,000 / month</div>
+                    <div class="property-title">TRION TOWER 3 PENTHOUSE</div>
+                    <div class="property-location">📍 BGC, Taguig City</div>
+                    <ul class="property-features-list">
+                        <li>50th Floor | Corner End Unit</li>
+                        <li>1 Bedroom | Fully Furnished</li>
+                        <li>Includes Assoc. Dues & Parking</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- ONE ROCKWELL WEST -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('rockwell-slider', -1)">❮</button>
@@ -334,7 +359,7 @@
                 </div>
             </div>
 
-            <!-- 1. UPTOWN RITZ -->
+            <!-- UPTOWN RITZ -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('uptown-slider', -1)">❮</button>
@@ -358,7 +383,7 @@
                 </div>
             </div>
 
-            <!-- 2. SPLENDIDO -->
+            <!-- SPLENDIDO -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('splendido-slider', -1)">❮</button>
@@ -381,7 +406,7 @@
                 </div>
             </div>
 
-            <!-- 3. GREENFIELD -->
+            <!-- GREENFIELD -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('greenfield-slider', -1)">❮</button>
@@ -401,7 +426,7 @@
                 </div>
             </div>
 
-            <!-- 4. ETON -->
+            <!-- ETON -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('eton-slider', -1)">❮</button>
@@ -421,7 +446,7 @@
                 </div>
             </div>
 
-            <!-- 5. SOLEN -->
+            <!-- SOLEN -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('solen-slider', -1)">❮</button>
@@ -441,7 +466,7 @@
                 </div>
             </div>
 
-            <!-- 6. SOUTH FORBES -->
+            <!-- SOUTH FORBES -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('southforbes-slider', -1)">❮</button>
@@ -466,6 +491,7 @@
 
     <script>
         const slideIndexes = {
+            'trion-slider': 0,
             'rockwell-slider': 0,
             'uptown-slider': 0,
             'splendido-slider': 0,
