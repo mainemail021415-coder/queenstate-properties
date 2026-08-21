@@ -305,7 +305,35 @@
         <h2 class="section-title">Featured Properties For Sale & Rent</h2>
         <div class="property-grid">
             
-            <!-- NEW: TRION TOWER 3 -->
+            <!-- TWO SERENDRA RED OAK TOWER -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('serendra-slider', -1)">❮</button>
+                    <div class="carousel-slide" id="serendra-slider">
+                        <img src="image_08848a.jpg" alt="Two Serendra 1">
+                        <img src="image_0887c7.jpg" alt="Two Serendra 2">
+                        <img src="image_0887e8.jpg" alt="Two Serendra 3">
+                        <img src="image_088829.png" alt="Two Serendra 4">
+                        <img src="image_088867.jpg" alt="Two Serendra 5">
+                        <img src="image_088b89.png" alt="Two Serendra 6">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('serendra-slider', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱130,000 / month</div>
+                    <div class="property-title">TWO SERENDRA RED OAK TOWER</div>
+                    <div class="property-location">📍 BGC, Taguig City</div>
+                    <ul class="property-features-list">
+                        <li>109 sqm | 37th Floor Corner Unit</li>
+                        <li>3 BR, 2 T&B + Maid's Room with T&B</li>
+                        <li>Fully Furnished with Balcony & Parking</li>
+                        <li>Personal Lease Only (No OR, No Pets)</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- TRION TOWER 3 -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('trion-slider', -1)">❮</button>
@@ -491,6 +519,7 @@
 
     <script>
         const slideIndexes = {
+            'serendra-slider': 0,
             'trion-slider': 0,
             'rockwell-slider': 0,
             'uptown-slider': 0,
