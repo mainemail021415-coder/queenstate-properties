@@ -61,7 +61,32 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
-            <!-- NEWLY ADDED: LUXE MAKATI -->
+            <!-- NEWLY ADDED: PROSCENIUM RESIDENCE -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('proscenium', -1)">❮</button>
+                    <div class="carousel-slide" id="proscenium">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/proscenium1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/proscenium2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/proscenium3.jpg" alt="3">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('proscenium', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱36,000,000 gross</div>
+                    <div class="property-title">THE PROSCENIUM RESIDENCE</div>
+                    <div class="property-location">📍 Rockwell Center, Makati City</div>
+                    <ul class="property-features-list">
+                        <li>89 sqm | 2 Bedroom Unit</li>
+                        <li>Fully Furnished with Balcony</li>
+                        <li>Maid's Room Included</li>
+                        <li>1 Parking Slot</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- LUXE MAKATI -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('luxemakati', -1)">❮</button>
@@ -411,7 +436,7 @@
 
     <script>
         const slideIndexes = { 
-            'luxemakati': 0, 'sapphire': 0, 'callisto': 0, 'rockwellwest_new': 0, 'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
+            'proscenium': 0, 'luxemakati': 0, 'sapphire': 0, 'callisto': 0, 'rockwellwest_new': 0, 'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
             'afpovai': 0, 'serendra': 0, 'trion': 0, 'rockwell': 0, 
             'uptown': 0, 'greenfield': 0, 'westwing': 0 
         };
