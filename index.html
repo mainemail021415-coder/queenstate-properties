@@ -61,6 +61,33 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- PARKWEST BGC -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('parkwest', -1)">❮</button>
+                    <div class="carousel-slide" id="parkwest">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/parkwest1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/parkwest2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/parkwest3.jpg" alt="3">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/parkwest4.jpg" alt="4">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/parkwest5.jpg" alt="5">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('parkwest', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱45,000 / month</div>
+                    <div class="property-title">PARKWEST BGC</div>
+                    <div class="property-location">📍 BGC, Taguig City (Near Uptown & Mitsukoshi Mall)</div>
+                    <ul class="property-features-list">
+                        <li>39 sqm | 33rd Floor | 1 Bedroom + 1 Bath</li>
+                        <li>Pet Friendly Unit | Available for Viewing</li>
+                        <li>Association dues included</li>
+                        <li>Terms: 2 mos deposit + 2 mos advance and PDCs (or 1 year advance if no PDCs)</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- MARIDIEN TOWER 2 -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -853,6 +880,7 @@
 
     <script>
         const slideIndexes = { 
+            'parkwest': 0,
             'maridien2': 0,
             'arcasouth': 0,
             'kensington': 0,
