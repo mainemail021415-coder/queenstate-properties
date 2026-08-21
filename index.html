@@ -305,6 +305,32 @@
         <h2 class="section-title">Featured Properties For Sale & Rent</h2>
         <div class="property-grid">
             
+            <!-- ISABELLE ROYALE HOTEL -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('isabelle-slider', -1)">❮</button>
+                    <div class="carousel-slide" id="isabelle-slider">
+                        <img src="image_090065.jpg" alt="Isabelle Royale 1">
+                        <img src="image_090088.jpg" alt="Isabelle Royale 2">
+                        <img src="image_090332.jpg" alt="Isabelle Royale 3">
+                        <img src="image_090351.jpg" alt="Isabelle Royale 4">
+                        <img src="image_090389.jpg" alt="Isabelle Royale 5">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('isabelle-slider', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">For Lease (Studio)</div>
+                    <div class="property-title">ISABELLE ROYALE HOTEL</div>
+                    <div class="property-location">📍 Poblacion, Makati City</div>
+                    <ul class="property-features-list">
+                        <li>28 sqm | Fully Furnished</li>
+                        <li>Japanese Sakura Inspired Interior</li>
+                        <li>Min. 6 mos lease (2 Adv, 2 Dep)</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- AFPOVAI 5 HOUSE -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -500,51 +526,12 @@
                 </div>
             </div>
 
-            <!-- SOLEN -->
-            <div class="property-card">
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="moveSlide('solen-slider', -1)">❮</button>
-                    <div class="carousel-slide" id="solen-slider">
-                        <img src="solen1.jpg" alt="Solen 1">
-                    </div>
-                    <button class="carousel-btn next" onclick="moveSlide('solen-slider', 1)">❯</button>
-                </div>
-                <div class="property-info">
-                    <div class="property-price">₱23,300,000</div>
-                    <div class="property-title">SOLEN RESIDENCES (RFO)</div>
-                    <div class="property-location">📍 Sta. Rosa, Laguna</div>
-                    <ul class="property-features-list">
-                        <li>4 Bedrooms | Smart Home</li>
-                    </ul>
-                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
-                </div>
-            </div>
-
-            <!-- SOUTH FORBES -->
-            <div class="property-card">
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="moveSlide('southforbes-slider', -1)">❮</button>
-                    <div class="carousel-slide" id="southforbes-slider">
-                        <img src="southforbes1.jpg" alt="South Forbes 1">
-                    </div>
-                    <button class="carousel-btn next" onclick="moveSlide('southforbes-slider', 1)">❯</button>
-                </div>
-                <div class="property-info">
-                    <div class="property-price">₱60,000,000</div>
-                    <div class="property-title">LUXURY MANSION</div>
-                    <div class="property-location">📍 Silang, Cavite</div>
-                    <ul class="property-features-list">
-                        <li>6 Bedrooms | 460 sqm</li>
-                    </ul>
-                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <script>
         const slideIndexes = {
+            'isabelle-slider': 0,
             'afpovai-slider': 0,
             'serendra-slider': 0,
             'trion-slider': 0,
@@ -552,9 +539,7 @@
             'uptown-slider': 0,
             'splendido-slider': 0,
             'greenfield-slider': 0,
-            'eton-slider': 0,
-            'solen-slider': 0,
-            'southforbes-slider': 0
+            'eton-slider': 0
         };
 
         function moveSlide(sliderId, direction) {
