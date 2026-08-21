@@ -5,44 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queenstate Properties</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #fce4ec; color: #1a1a1a; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #fff; }
-        .logo-area { font-weight: bold; font-size: 24px; text-decoration: none; color: #000; }
-        .nav-links { display: flex; gap: 20px; }
-        .contact-info { font-weight: bold; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #ffffff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 100; }
+        .logo-area { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #1a1a1a; font-weight: bold; font-size: 24px; }
+        .nav-links { display: flex; gap: 20px; font-weight: 600; font-size: 14px; }
+        .contact-info { font-weight: 600; font-size: 14px; }
         
         /* Hero Section */
-        .hero { display: flex; align-items: center; padding: 50px; gap: 40px; max-width: 1200px; margin: auto; }
+        .hero { display: flex; justify-content: space-between; align-items: center; padding: 50px; max-width: 1200px; margin: 0 auto; gap: 40px; }
         .hero-text { flex: 1; }
-        .hero-text h1 { font-size: 48px; margin-bottom: 20px; }
-        .hero-image { flex: 1; }
-        .hero-image img { width: 100%; border-radius: 15px; }
+        .hero-text h1 { font-size: 42px; margin-bottom: 15px; }
+        .hero-image { flex: 1; text-align: center; }
+        .hero-image img { max-width: 100%; border-radius: 15px; }
 
-        /* Properties */
-        .properties-section { max-width: 1200px; margin: 50px auto; padding: 0 50px; }
+        /* Properties Section */
+        .properties-section { max-width: 1200px; margin: 0 auto 80px auto; padding: 0 50px; }
+        .section-title { text-align: center; font-size: 32px; margin-bottom: 40px; color: #111; }
         .property-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-        .property-card { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #f8bbd0; }
-        .carousel-container { width: 100%; height: 200px; overflow: hidden; }
-        .carousel-container img { width: 100%; height: 100%; object-fit: cover; }
-        .property-info { padding: 20px; }
-        .property-price { color: #d81b60; font-weight: bold; font-size: 18px; }
-        .property-title { font-weight: bold; font-size: 16px; margin: 5px 0; }
-        .btn-details { display: block; background: #111; color: #fff; text-align: center; padding: 10px; margin-top: 15px; text-decoration: none; border-radius: 5px; }
+        .property-card { background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #f8bbd0; display: flex; flex-direction: column; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+
+        /* Carousel Styles */
+        .carousel-container { position: relative; width: 100%; height: 240px; overflow: hidden; background-color: #000; }
+        .carousel-slide { display: flex; width: 100%; height: 100%; transition: transform 0.4s ease-in-out; }
+        .carousel-slide img { width: 100%; height: 100%; object-fit: cover; flex-shrink: 0; }
+        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 6px 10px; cursor: pointer; border-radius: 50%; font-size: 14px; z-index: 10; }
+        .carousel-btn.prev { left: 10px; }
+        .carousel-btn.next { right: 10px; }
+        .carousel-btn:hover { background: rgba(216, 27, 96, 0.8); }
+
+        /* Property Info */
+        .property-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .property-price { font-size: 18px; font-weight: bold; color: #d81b60; margin-bottom: 5px; }
+        .property-title { font-size: 16px; font-weight: bold; margin-bottom: 5px; color: #111; }
+        .property-location { font-size: 13px; color: #666; margin-bottom: 10px; font-weight: 600; }
+        .property-features-list { font-size: 13px; color: #444; margin-bottom: 15px; list-style-type: disc; padding-left: 18px; flex-grow: 1; }
+        .btn-details { display: block; text-align: center; background-color: #111; color: #fff; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; margin-top: auto; }
+        .btn-details:hover { background-color: #d81b60; }
+
+        @media (max-width: 900px) { .property-grid { grid-template-columns: 1fr; } .hero { flex-direction: column; padding: 20px; } }
     </style>
 </head>
 <body>
 
 <header>
     <a href="#" class="logo-area">Queenstate Properties</a>
-    <div class="nav-links"><span>PROPERTIES</span></div>
+    <div class="nav-links">
+        <a href="#properties" style="text-decoration:none; color:#1a1a1a;">PROPERTIES</a>
+    </div>
     <div class="contact-info">📞 +63 955 655 5670</div>
 </header>
 
 <section class="hero">
     <div class="hero-text">
         <h1>Experience Excellence in Real Estate</h1>
-        <p>Discover your dream home with us.</p>
+        <p>Discover your dream home with Queenstate Properties.</p>
     </div>
     <div class="hero-image">
         <img src="banner.jpg" alt="Hero Banner">
@@ -50,77 +67,163 @@
 </section>
 
 <section class="properties-section" id="properties">
-    <h2 style="text-align: center; margin-bottom: 30px;">Featured Properties</h2>
+    <h2 class="section-title">Featured Properties</h2>
     <div class="property-grid">
         
-        <!-- Uptown Ritz -->
+        <!-- 1. Uptown Ritz -->
         <div class="property-card">
-            <div class="carousel-container"><img src="uptown1.jpg" alt="Uptown"></div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveSlide('uptown-slider', -1)">❮</button>
+                <div class="carousel-slide" id="uptown-slider">
+                    <img src="uptown1.jpg" alt="Uptown Ritz 1">
+                    <img src="uptown2.jpg" alt="Uptown Ritz 2">
+                    <img src="uptown3.jpg" alt="Uptown Ritz 3">
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide('uptown-slider', 1)">❯</button>
+            </div>
             <div class="property-info">
                 <div class="property-price">₱200,000 / month</div>
                 <div class="property-title">UPTOWN RITZ PENTHOUSE</div>
-                <p>📍 BGC, Taguig City</p>
+                <div class="property-location">📍 BGC, Taguig City</div>
+                <ul class="property-features-list">
+                    <li>131.05 sqm | 45th Floor</li>
+                    <li>3 BR, 3 T&B, 1 Powder Room</li>
+                </ul>
                 <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
             </div>
         </div>
 
-        <!-- Splendido -->
+        <!-- 2. Splendido Tagaytay -->
         <div class="property-card">
-            <div class="carousel-container"><img src="splendido1.jpg" alt="Splendido"></div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveSlide('splendido-slider', -1)">❮</button>
+                <div class="carousel-slide" id="splendido-slider">
+                    <img src="splendido1.jpg" alt="Splendido 1">
+                    <img src="splendido2.jpg" alt="Splendido 2">
+                    <img src="splendido3.jpg" alt="Splendido 3">
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide('splendido-slider', 1)">❯</button>
+            </div>
             <div class="property-info">
                 <div class="property-price">₱400,000,000</div>
                 <div class="property-title">SPLENDIDO TAGAYTAY</div>
-                <p>📍 Tagaytay City</p>
+                <div class="property-location">📍 Tagaytay City</div>
+                <ul class="property-features-list">
+                    <li>Ultra Luxury House with Helipad</li>
+                    <li>8 Bedrooms</li>
+                </ul>
                 <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
             </div>
         </div>
 
-        <!-- Greenfield -->
+        <!-- 3. Ayala Greenfield -->
         <div class="property-card">
-            <div class="carousel-container"><img src="greenfield1.jpg" alt="Greenfield"></div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveSlide('greenfield-slider', -1)">❮</button>
+                <div class="carousel-slide" id="greenfield-slider">
+                    <img src="greenfield1.jpg" alt="Greenfield 1">
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide('greenfield-slider', 1)">❯</button>
+            </div>
             <div class="property-info">
                 <div class="property-price">Rent: 100k/mo</div>
                 <div class="property-title">AYALA GREENFIELD ESTATES</div>
-                <p>📍 Calamba, Laguna</p>
+                <div class="property-location">📍 Calamba, Laguna</div>
+                <ul class="property-features-list">
+                    <li>500 sqm | Semi-Furnished</li>
+                </ul>
                 <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
             </div>
         </div>
 
-        <!-- Eton -->
+        <!-- 4. Eton -->
         <div class="property-card">
-            <div class="carousel-container"><img src="eton1.jpg" alt="Eton"></div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveSlide('eton-slider', -1)">❮</button>
+                <div class="carousel-slide" id="eton-slider">
+                    <img src="eton1.jpg" alt="Eton 1">
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide('eton-slider', 1)">❯</button>
+            </div>
             <div class="property-info">
                 <div class="property-price">₱13,500,000</div>
                 <div class="property-title">BRAND NEW HOUSE (ETON)</div>
-                <p>📍 Sta. Rosa City</p>
+                <div class="property-location">📍 Sta. Rosa City</div>
+                <ul class="property-features-list">
+                    <li>3 Bedrooms | Corner Lot</li>
+                </ul>
                 <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
             </div>
         </div>
 
-        <!-- Solen -->
+        <!-- 5. Solen -->
         <div class="property-card">
-            <div class="carousel-container"><img src="solen1.jpg" alt="Solen"></div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveSlide('solen-slider', -1)">❮</button>
+                <div class="carousel-slide" id="solen-slider">
+                    <img src="solen1.jpg" alt="Solen 1">
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide('solen-slider', 1)">❯</button>
+            </div>
             <div class="property-info">
                 <div class="property-price">₱23,300,000</div>
                 <div class="property-title">SOLEN RESIDENCES (RFO)</div>
-                <p>📍 Sta. Rosa, Laguna</p>
+                <div class="property-location">📍 Sta. Rosa, Laguna</div>
+                <ul class="property-features-list">
+                    <li>4 Bedrooms | Smart Home</li>
+                </ul>
                 <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
             </div>
         </div>
 
-        <!-- South Forbes -->
+        <!-- 6. South Forbes -->
         <div class="property-card">
-            <div class="carousel-container"><img src="southforbes1.jpg" alt="South Forbes"></div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveSlide('southforbes-slider', -1)">❮</button>
+                <div class="carousel-slide" id="southforbes-slider">
+                    <img src="southforbes1.jpg" alt="South Forbes 1">
+                </div>
+                <button class="carousel-btn next" onclick="moveSlide('southforbes-slider', 1)">❯</button>
+            </div>
             <div class="property-info">
                 <div class="property-price">₱60,000,000</div>
                 <div class="property-title">LUXURY MANSION</div>
-                <p>📍 Silang, Cavite</p>
+                <div class="property-location">📍 Silang, Cavite</div>
+                <ul class="property-features-list">
+                    <li>6 Bedrooms | 460 sqm</li>
+                </ul>
                 <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
             </div>
         </div>
 
     </div>
 </section>
+
+<script>
+    const slideIndexes = {
+        'uptown-slider': 0,
+        'splendido-slider': 0,
+        'greenfield-slider': 0,
+        'eton-slider': 0,
+        'solen-slider': 0,
+        'southforbes-slider': 0
+    };
+
+    function moveSlide(sliderId, direction) {
+        const slider = document.getElementById(sliderId);
+        const totalSlides = slider.children.length;
+        
+        slideIndexes[sliderId] += direction;
+        
+        if (slideIndexes[sliderId] < 0) {
+            slideIndexes[sliderId] = totalSlides - 1;
+        } else if (slideIndexes[sliderId] >= totalSlides) {
+            slideIndexes[sliderId] = 0;
+        }
+        
+        slider.style.transform = `translateX(-${slideIndexes[sliderId] * 100}%)`;
+    }
+</script>
 
 </body>
 </html>
