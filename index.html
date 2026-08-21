@@ -61,6 +61,32 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- KENSINGTON PLACE BGC -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('kensington', -1)">❮</button>
+                    <div class="carousel-slide" id="kensington">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/kensington1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/kensington2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/kensington3.jpg" alt="3">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/kensington4.jpg" alt="4">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/kensington5.jpg" alt="5">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('kensington', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱55,000 / month</div>
+                    <div class="property-title">KENSINGTON PLACE</div>
+                    <div class="property-location">📍 BGC, Taguig City</div>
+                    <ul class="property-features-list">
+                        <li>70 sqm | Fully Furnished Unit</li>
+                        <li>2 Bedrooms | 2 T&B</li>
+                        <li>Maid's / Utility Room Included</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- PORTOFINO ALABANG -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -773,6 +799,7 @@
 
     <script>
         const slideIndexes = { 
+            'kensington': 0,
             'portofino': 0,
             'newport': 0,
             'porac_lot': 0,
