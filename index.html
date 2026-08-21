@@ -305,6 +305,35 @@
         <h2 class="section-title">Featured Properties For Sale & Rent</h2>
         <div class="property-grid">
             
+            <!-- NEW: ONE ROCKWELL WEST -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('rockwell-slider', -1)">❮</button>
+                    <div class="carousel-slide" id="rockwell-slider">
+                        <img src="image_fd2e2b.jpg" alt="Rockwell 1">
+                        <img src="image_fd2e61.jpg" alt="Rockwell 2">
+                        <img src="image_fd2edc.jpg" alt="Rockwell 3">
+                        <img src="image_fd2ee5.jpg" alt="Rockwell 4">
+                        <img src="image_fd318e.jpg" alt="Rockwell 5">
+                        <img src="image_fd31c5.jpg" alt="Rockwell 6">
+                        <img src="image_fd31e5.png" alt="Rockwell 7">
+                        <img src="image_fd32a6.jpg" alt="Rockwell 8">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('rockwell-slider', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱72,000 / month</div>
+                    <div class="property-title">ONE ROCKWELL WEST</div>
+                    <div class="property-location">📍 Rockwell Center, Makati</div>
+                    <ul class="property-features-list">
+                        <li>59 sqm | 1 Bedroom</li>
+                        <li>Fully Furnished</li>
+                        <li>Promo: + 1 Week Free Rent</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- 1. UPTOWN RITZ -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -437,6 +466,7 @@
 
     <script>
         const slideIndexes = {
+            'rockwell-slider': 0,
             'uptown-slider': 0,
             'splendido-slider': 0,
             'greenfield-slider': 0,
