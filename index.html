@@ -305,6 +305,32 @@
         <h2 class="section-title">Featured Properties For Sale & Rent</h2>
         <div class="property-grid">
             
+            <!-- AYALA ALABANG HOUSE -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('alabang-slider', -1)">❮</button>
+                    <div class="carousel-slide" id="alabang-slider">
+                        <img src="alabang1.jpg" alt="Ayala Alabang 1">
+                        <img src="alabang2.jpg" alt="Ayala Alabang 2">
+                        <img src="alabang3.jpg" alt="Ayala Alabang 3">
+                        <img src="alabang4.jpg" alt="Ayala Alabang 4">
+                        <img src="alabang5.jpg" alt="Ayala Alabang 5">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('alabang-slider', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱150,000 / month</div>
+                    <div class="property-title">AYALA ALABANG HOUSE</div>
+                    <div class="property-location">📍 Batangas West, Ayala Alabang, Muntinlupa</div>
+                    <ul class="property-features-list">
+                        <li>5 Bedrooms | 4 T&B + Maid's Room</li>
+                        <li>Fully Furnished w/ Swimming Pool</li>
+                        <li>3-4 Parking Slots (1yr Adv, 2mos Dep)</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- ISABELLE ROYALE HOTEL -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -506,31 +532,12 @@
                 </div>
             </div>
 
-            <!-- ETON -->
-            <div class="property-card">
-                <div class="carousel-container">
-                    <button class="carousel-btn prev" onclick="moveSlide('eton-slider', -1)">❮</button>
-                    <div class="carousel-slide" id="eton-slider">
-                        <img src="eton1.jpg" alt="Eton 1">
-                    </div>
-                    <button class="carousel-btn next" onclick="moveSlide('eton-slider', 1)">❯</button>
-                </div>
-                <div class="property-info">
-                    <div class="property-price">₱13,500,000</div>
-                    <div class="property-title">BRAND NEW HOUSE (ETON)</div>
-                    <div class="property-location">📍 Sta. Rosa City</div>
-                    <ul class="property-features-list">
-                        <li>3 Bedrooms | Corner Lot</li>
-                    </ul>
-                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <script>
         const slideIndexes = {
+            'alabang-slider': 0,
             'isabelle-slider': 0,
             'afpovai-slider': 0,
             'serendra-slider': 0,
@@ -538,8 +545,7 @@
             'rockwell-slider': 0,
             'uptown-slider': 0,
             'splendido-slider': 0,
-            'greenfield-slider': 0,
-            'eton-slider': 0
+            'greenfield-slider': 0
         };
 
         function moveSlide(sliderId, direction) {
