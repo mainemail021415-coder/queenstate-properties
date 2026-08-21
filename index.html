@@ -61,6 +61,28 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- AYALA GREENFIELD ESTATES LOT ONLY -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('greenfield_lot', -1)">❮</button>
+                    <div class="carousel-slide" id="greenfield_lot">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/greenfield_lot1.jpg" alt="1">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('greenfield_lot', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱40,000 / sqm</div>
+                    <div class="property-title">AYALA GREENFIELD ESTATES (LOT ONLY)</div>
+                    <div class="property-location">📍 Phase 2 Blk 5 Lot 21, Calamba, Laguna</div>
+                    <ul class="property-features-list">
+                        <li>496 sqm Lot Size | View Lot (High Elevation)</li>
+                        <li>Includes Golf Membership</li>
+                        <li>Clean Title</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- FOR SALE: TWO SERENDRA 1-BEDROOM -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -621,7 +643,7 @@
                 </div>
             </div>
 
-            <!-- AYALA GREENFIELD ESTATES -->
+            <!-- AYALA GREENFIELD ESTATES (HOUSE) -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('greenfield', -1)">❮</button>
@@ -672,6 +694,7 @@
 
     <script>
         const slideIndexes = { 
+            'greenfield_lot': 0,
             'twoserendra_1br': 0,
             'sanpedro_laguna': 0,
             'aveia_broadfield': 0, 
