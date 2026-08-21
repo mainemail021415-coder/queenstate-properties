@@ -61,7 +61,32 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
-            <!-- NEWLY ADDED: PROSCENIUM RESIDENCE -->
+            <!-- NEWLY ADDED: RED OAK AT TWO SERENDRA -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('redoak', -1)">❮</button>
+                    <div class="carousel-slide" id="redoak">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/redoak1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/redoak2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/redoak3.jpg" alt="3">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/redoak4.jpg" alt="4">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('redoak', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱11,000,000 gross</div>
+                    <div class="property-title">RED OAK AT TWO SERENDRA</div>
+                    <div class="property-location">📍 BGC, Taguig City</div>
+                    <ul class="property-features-list">
+                        <li>41 sqm | Studio Unit with Balcony</li>
+                        <li>17th Floor (No Parking)</li>
+                        <li>With Tenant until December 2026</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- PROSCENIUM RESIDENCE -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('proscenium', -1)">❮</button>
@@ -436,7 +461,7 @@
 
     <script>
         const slideIndexes = { 
-            'proscenium': 0, 'luxemakati': 0, 'sapphire': 0, 'callisto': 0, 'rockwellwest_new': 0, 'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
+            'redoak': 0, 'proscenium': 0, 'luxemakati': 0, 'sapphire': 0, 'callisto': 0, 'rockwellwest_new': 0, 'splendido': 0, 'arborlanes': 0, 'alabang': 0, 'isabelle': 0, 
             'afpovai': 0, 'serendra': 0, 'trion': 0, 'rockwell': 0, 
             'uptown': 0, 'greenfield': 0, 'westwing': 0 
         };
