@@ -33,6 +33,9 @@
         .property-features-list { font-size: 13px; color: #444; margin-bottom: 15px; list-style-type: disc; padding-left: 18px; }
         .btn-details { display: block; text-align: center; background-color: #111; color: #fff; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 13px; }
         .btn-details:hover { background-color: #d81b60; }
+        .search-container { text-align: center; margin: 20px 0 40px 0; padding: 0 20px; }
+        .search-box { width: 100%; max-width: 500px; padding: 14px 20px; font-size: 16px; border: 2px solid #f8bbd0; border-radius: 30px; outline: none; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: all 0.3s ease; }
+        .search-box:focus { border-color: #d81b60; box-shadow: 0 4px 15px rgba(216,27,96,0.15); }
     </style>
 </head>
 <body>
@@ -57,7 +60,9 @@
         <h1>Premium Property Listings</h1>
         <p>Discover our exclusive selection of residential and commercial properties.</p>
     </section>
-
+<div class="search-container">
+        <input type="text" id="searchInput" class="search-box" placeholder="🔍 Search location, property name, or price..." onkeyup="searchProperties()">
+    </div>
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
@@ -1026,6 +1031,19 @@
             slideIndexes[id] = (slideIndexes[id] + dir + s.children.length) % s.children.length;
             s.style.transform = `translateX(-${slideIndexes[id] * 100}%)`;
         }
+        function searchProperties() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const cards = document.getElementsByClassName('property-card');
+
+        for (let i = 0; i < cards.length; i++) {
+            const cardText = cards[i].innerText.toLowerCase();
+            if (cardText.includes(input)) {
+                cards[i].style.display = ""; 
+            } else {
+                cards[i].style.display = "none"; 
+            }
+        }
+    }
     </script>
 </body>
 </html>
