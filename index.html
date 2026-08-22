@@ -61,7 +61,34 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
-            <!-- NEW PROPERTY: 5-BEDROOM HOUSE FOR SALE/RENT -->
+            <!-- NEW PROPERTY: FLAIR TOWERS STUDIO UNIT -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('flair_towers', -1)">❮</button>
+                    <div class="carousel-slide" id="flair_towers">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/flair1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/flair2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/flair3.jpg" alt="3">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/flair4.jpg" alt="4">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/flair5.jpg" alt="5">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('flair_towers', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱4,500,000 | ₱20,000 / mo</div>
+                    <div class="property-title">FLAIR TOWERS STUDIO UNIT (DMCI)</div>
+                    <div class="property-location">📍 Reliance St. cor. Pines St., Mandaluyong City</div>
+                    <ul class="property-features-list">
+                        <li>25 sqm | 22nd Floor (Atrium Level, beside Sky Patio)</li>
+                        <li>Fully Furnished (Queen bed, sofa-bed, appliances & kitchenware)</li>
+                        <li>Facing amenities with morning sun view (No afternoon heat)</li>
+                        <li>Lease Terms: Min 1 yr | 2 mos deposit + 1 mo advance + 11 PDCs</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- 5-BEDROOM HOUSE FOR SALE/RENT -->
             <div class="property-card">
                 <div class="carousel-container">
                     <button class="carousel-btn prev" onclick="moveSlide('new_property', -1)">❮</button>
@@ -929,6 +956,7 @@
 
     <script>
         const slideIndexes = { 
+            'flair_towers': 0,
             'new_property': 0,
             'vermosa_lot': 0,
             'parkwest': 0,
