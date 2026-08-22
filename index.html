@@ -61,6 +61,30 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- VERMOSA RESIDENTIAL LOT -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('vermosa_lot', -1)">❮</button>
+                    <div class="carousel-slide" id="vermosa_lot">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/vermosalot1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/vermosalot2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/vermosalot3.jpg" alt="3">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('vermosa_lot', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱16,762,000 gross (₱58K / sqm)</div>
+                    <div class="property-title">RESIDENTIAL LOT IN VERMOSA</div>
+                    <div class="property-location">📍 Daang Hari Road cor. Vermosa Blvd, Imus, Cavite</div>
+                    <ul class="property-features-list">
+                        <li>289 sqm Residential Lot | Sunrise orientation</li>
+                        <li>Near gate and clubhouse</li>
+                        <li>Clean title & updated Amilyar</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- PARKWEST BGC -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -880,6 +904,7 @@
 
     <script>
         const slideIndexes = { 
+            'vermosa_lot': 0,
             'parkwest': 0,
             'maridien2': 0,
             'arcasouth': 0,
