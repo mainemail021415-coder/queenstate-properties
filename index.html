@@ -61,6 +61,31 @@
     <section class="properties-section" id="properties">
         <div class="property-grid">
 
+            <!-- NEW PROPERTY: 5-BEDROOM HOUSE FOR SALE/RENT -->
+            <div class="property-card">
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveSlide('new_property', -1)">❮</button>
+                    <div class="carousel-slide" id="new_property">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/property1.jpg" alt="1">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/property2.jpg" alt="2">
+                        <img src="https://raw.githubusercontent.com/mainemail021415-coder/queenstate-properties/main/property3.jpg" alt="3">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide('new_property', 1)">❯</button>
+                </div>
+                <div class="property-info">
+                    <div class="property-price">₱25,000,000 | ₱75,000 / mo</div>
+                    <div class="property-title">5-BEDROOM HOUSE & LOT</div>
+                    <div class="property-location">📍 For Sale or For Rent</div>
+                    <ul class="property-features-list">
+                        <li>Lot Area: 240 sqm | Floor Area: 360 sqm</li>
+                        <li>5 Bedrooms + Maid's Room | 5 Toilets & Bath</li>
+                        <li>2 to 3-Car Garage & Laundry Area</li>
+                        <li>Available for Rent (Unfurnished)</li>
+                    </ul>
+                    <a href="https://wa.me/639556555670" class="btn-details">Inquire Now</a>
+                </div>
+            </div>
+
             <!-- VERMOSA RESIDENTIAL LOT -->
             <div class="property-card">
                 <div class="carousel-container">
@@ -904,6 +929,7 @@
 
     <script>
         const slideIndexes = { 
+            'new_property': 0,
             'vermosa_lot': 0,
             'parkwest': 0,
             'maridien2': 0,
